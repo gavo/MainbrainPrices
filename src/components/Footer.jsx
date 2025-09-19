@@ -10,10 +10,10 @@ const Footer = () => {
 					transition={{ duration: 0.8 }}
 					className="text-center"
 				>
-					<h3 className="text-2xl font-bold mb-4 text-black">
+					<h3 className="text-2xl font-bold mb-4 text-white">
 						¿Listo para transformar tu empresa?
 					</h3>
-					<p className="text-xl text-black mb-8 max-w-2xl mx-auto">
+					<p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
 						Únete a cientos de empresas que ya confían en Mainbrain ERP
 						para optimizar sus operaciones
 					</p>
@@ -23,7 +23,7 @@ const Footer = () => {
 							initial={{ opacity: 0, scale: 0.9 }}
 							whileInView={{ opacity: 1, scale: 1 }}
 							transition={{ duration: 0.5, delay: 0.2 }}
-							className="bg-[#1f1f1f] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#c10007] transition-colors duration-300 shadow-lg"
+							className="cursor-pointer bg-[#1f1f1f] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#c10007] transition-colors duration-300 shadow-lg"
 						>
 							📞 Contactar Ahora
 						</motion.button>
@@ -32,7 +32,7 @@ const Footer = () => {
 							initial={{ opacity: 0, scale: 0.9 }}
 							whileInView={{ opacity: 1, scale: 1 }}
 							transition={{ duration: 0.5, delay: 0.4 }}
-							className="bg-[#1f1f1f] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#c10007] transition-colors duration-300 shadow-lg"
+							className="cursor-pointer bg-[#1f1f1f] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#c10007] transition-colors duration-300 shadow-lg"
 						>
 							🎯 Solicitar Demo
 						</motion.button>
@@ -45,7 +45,7 @@ const Footer = () => {
 					transition={{ duration: 0.8, delay: 0.6 }}
 					className="border-t border-white/20 mt-12 pt-8 text-center text-white/70"
 				>
-					<p>&copy; 2024 Mainbrain ERP. Todos los derechos reservados.</p>
+					<p>&copy; 2025 Mainbrain ERP. Todos los derechos reservados.</p>
 					<div className="flex justify-center space-x-6 mt-4">
 						<a href="#" className="hover:text-white transition-colors">
 							Política de Privacidad

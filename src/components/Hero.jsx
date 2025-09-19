@@ -26,7 +26,7 @@ const Hero = ({ onScrollToCalculator }) => {
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.8, delay: 0.4 }}
 					onClick={onScrollToCalculator}
-					className="bg-[#1f1f1f] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#c10007] transition-colors duration-300 shadow-lg"
+					className="bg-[#1f1f1f] cursor-pointer text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#c10007] transition-colors duration-300 shadow-lg"
 				>
 					Calcular Mi Plan
 				</motion.button>

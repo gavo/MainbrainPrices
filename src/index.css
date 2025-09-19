@@ -1,15 +1,1 @@
 @import "tailwindcss";
-
-@theme {
-	--color-emerald-50: oklch(0.967 0.016 17.55);
-	--color-emerald-100: oklch(0.926 0.038 15.88);
-	--color-emerald-200: oklch(0.863 0.074 18.71);
-	--color-emerald-300: oklch(0.791 0.121 19.52);
-	--color-emerald-400: oklch(0.727 0.169 21.75);
-	--color-emerald-500: oklch(0.657 0.229 25.79);
-	--color-emerald-600: oklch(0.589 0.241 28.5);
-	--color-emerald-700: oklch(0.51 0.209 28.51);
-	--color-emerald-800: oklch(0.39 0.16 28.54);
-	--color-emerald-900: oklch(0.264 0.108 28.49);
-	--color-emerald-950: oklch(0.209 0.086 29.23);
-}

@@ -4,8 +4,8 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				brand: "#b33737",
-				support: "#9e9e9e",
+				brand: "#d70007",
+				support: "#5e5e5e",
 			},
 		},
 	},

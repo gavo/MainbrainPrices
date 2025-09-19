@@ -89,7 +89,7 @@ const Calculator = ({ onCalculate }) => {
 
 					<button
 						type="submit"
-						className="w-full bg-[#1f1f1f] text-white py-4 px-6 rounded-lg font-semibold text-lg hover:bg-[#c10007] transition-colors duration-300 shadow-lg"
+						className="w-full cursor-pointer bg-[#1f1f1f] text-white py-4 px-6 rounded-lg font-semibold text-lg hover:bg-[#c10007] transition-colors duration-300 shadow-lg"
 					>
 						Calcular Plan
 					</button>
