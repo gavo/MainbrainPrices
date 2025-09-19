@@ -3,7 +3,7 @@
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
-	"homepage": "https://tuusuario.github.io/MainbrainPrices",
+	"homepage": "https://gavo.github.io/MainbrainPrices",
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
