@@ -21,13 +21,12 @@ const Result = ({ plan }) => {
 				frecuencia: "Mensual",
 			},
 			Medium: {
-				precio: 500,
+				precio: 400,
 				modulos: [
 					"Contabilidad Completa",
 					"Inventario Avanzado",
 					"Facturación",
-					"RRHH Completo",
-					"CRM",
+					"RRHH Básico",
 				],
 				frecuencia: "Mensual",
 			},
@@ -41,27 +40,17 @@ const Result = ({ plan }) => {
 				],
 				frecuencia: "Mensual",
 			},
-			Max: {
-				precio: 1500,
+			Enterprise: {
+				precio: "Precio negociado en oficina",
 				modulos: [
 					"Todos los módulos",
 					"Análisis Avanzado",
 					"Integraciones",
 					"Soporte Premium",
-					"Consultoría",
-				],
-				frecuencia: "Mensual",
-			},
-			Super: {
-				precio: 2500,
-				modulos: [
-					"Todos los módulos",
-					"Análisis Avanzado",
-					"Integraciones",
-					"Soporte VIP",
 					"Consultoría Personalizada",
+					"Implementación Completa",
 				],
-				frecuencia: "Mensual",
+				frecuencia: "Personalizado",
 			},
 		};
 		return plans[planName] || null;
@@ -99,7 +88,9 @@ const Result = ({ plan }) => {
 					<div className="bg-gradient-to-r from-brand to-support p-6 rounded-lg mb-6">
 						<h4 className="text-3xl font-bold mb-2">{plan.nombre}</h4>
 						<p className="text-2xl font-semibold">
-							{planDetails?.precio} Bs.
+							{typeof planDetails?.precio === "string"
+								? planDetails.precio
+								: `${planDetails?.precio} Bs.`}
 						</p>
 						<p className="text-sm opacity-90">
 							{planDetails?.frecuencia}

@@ -3,7 +3,9 @@ import { motion } from "framer-motion";
 
 const Calculator = ({ onCalculate }) => {
 	const [formData, setFormData] = useState({
-		dimension: "",
+		cantidadUsuarios: "",
+		computadorasInstalar: "",
+		cantidadOficinas: "",
 		transacciones: "",
 	});
 
@@ -17,7 +19,12 @@ const Calculator = ({ onCalculate }) => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		if (formData.dimension && formData.transacciones) {
+		if (
+			formData.cantidadUsuarios &&
+			formData.computadorasInstalar &&
+			formData.cantidadOficinas &&
+			formData.transacciones
+		) {
 			onCalculate(formData);
 		}
 	};
@@ -49,18 +56,58 @@ const Calculator = ({ onCalculate }) => {
 				>
 					<div className="mb-6">
 						<label
-							htmlFor="dimension"
+							htmlFor="cantidadUsuarios"
 							className="block text-sm font-medium text-brand mb-2"
 						>
-							Dimensión del Proyecto (USD)
+							Cantidad de Usuarios
 						</label>
 						<input
 							type="number"
-							id="dimension"
-							name="dimension"
-							value={formData.dimension}
+							id="cantidadUsuarios"
+							name="cantidadUsuarios"
+							value={formData.cantidadUsuarios}
 							onChange={handleInputChange}
-							placeholder="Ej: 5000"
+							placeholder="Ej: 5"
+							className="w-full px-4 py-3 border border-support rounded-lg focus:ring-2 focus:ring-brand focus:border-transparent"
+							min="0"
+							required
+						/>
+					</div>
+
+					<div className="mb-6">
+						<label
+							htmlFor="computadorasInstalar"
+							className="block text-sm font-medium text-brand mb-2"
+						>
+							Computadoras a Instalar
+						</label>
+						<input
+							type="number"
+							id="computadorasInstalar"
+							name="computadorasInstalar"
+							value={formData.computadorasInstalar}
+							onChange={handleInputChange}
+							placeholder="Ej: 10"
+							className="w-full px-4 py-3 border border-support rounded-lg focus:ring-2 focus:ring-brand focus:border-transparent"
+							min="0"
+							required
+						/>
+					</div>
+
+					<div className="mb-6">
+						<label
+							htmlFor="cantidadOficinas"
+							className="block text-sm font-medium text-brand mb-2"
+						>
+							Cantidad de Oficinas
+						</label>
+						<input
+							type="number"
+							id="cantidadOficinas"
+							name="cantidadOficinas"
+							value={formData.cantidadOficinas}
+							onChange={handleInputChange}
+							placeholder="Ej: 3"
 							className="w-full px-4 py-3 border border-support rounded-lg focus:ring-2 focus:ring-brand focus:border-transparent"
 							min="0"
 							required
