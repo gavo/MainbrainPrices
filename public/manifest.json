@@ -1,0 +1,21 @@
+{
+	"name": "Mainbrain ERP Calculator",
+	"short_name": "Mainbrain Calculator",
+	"description": "Calcula el plan ideal para tu empresa con Mainbrain ERP",
+	"start_url": "/",
+	"display": "standalone",
+	"background_color": "#3f3f3f",
+	"theme_color": "#b33737",
+	"icons": [
+		{
+			"src": "/vite.svg",
+			"sizes": "192x192",
+			"type": "image/svg+xml"
+		},
+		{
+			"src": "/vite.svg",
+			"sizes": "512x512",
+			"type": "image/svg+xml"
+		}
+	]
+}
