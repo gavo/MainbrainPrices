@@ -40,6 +40,30 @@ const Result = ({ plan }) => {
 				],
 				frecuencia: "Mensual",
 			},
+			PlusMax: {
+				precio: 1500,
+				modulos: [
+					"Todos los módulos",
+					"Análisis Avanzado",
+					"Integraciones",
+					"Soporte Premium",
+					"Consultoría Personalizada",
+					"Implementación Completa",
+				],
+				frecuencia: "Personalizado",
+			},
+			PlusSuper: {
+				precio: 2500,
+				modulos: [
+					"Todos los módulos",
+					"Análisis Avanzado",
+					"Integraciones",
+					"Soporte Premium",
+					"Consultoría Personalizada",
+					"Implementación Completa",
+				],
+				frecuencia: "Personalizado",
+			},
 			Enterprise: {
 				precio: "Precio negociado en oficina",
 				modulos: [

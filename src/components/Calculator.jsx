@@ -6,7 +6,7 @@ const Calculator = ({ onCalculate }) => {
 		cantidadUsuarios: "",
 		computadorasInstalar: "",
 		cantidadOficinas: "",
-		transacciones: "",
+		ventas: "",
 	});
 
 	const handleInputChange = (e) => {
@@ -23,7 +23,7 @@ const Calculator = ({ onCalculate }) => {
 			formData.cantidadUsuarios &&
 			formData.computadorasInstalar &&
 			formData.cantidadOficinas &&
-			formData.transacciones
+			formData.ventas
 		) {
 			onCalculate(formData);
 		}
@@ -116,16 +116,16 @@ const Calculator = ({ onCalculate }) => {
 
 					<div className="mb-8">
 						<label
-							htmlFor="transacciones"
+							htmlFor="ventas"
 							className="block text-sm font-medium text-brand mb-2"
 						>
-							Transacciones Diarias
+							Cantidad de ventas al Dia en promedio
 						</label>
 						<input
 							type="number"
-							id="transacciones"
-							name="transacciones"
-							value={formData.transacciones}
+							id="ventas"
+							name="ventas"
+							value={formData.ventas}
 							onChange={handleInputChange}
 							placeholder="Ej: 1500"
 							className="w-full px-4 py-3 border border-support rounded-lg focus:ring-2 focus:ring-brand focus:border-transparent"
